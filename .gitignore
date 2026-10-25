@@ -1,4 +1,7 @@
 .godot/
+.mono/
+bin/
+obj/
 *.translation
 *.exe
 *.apk
