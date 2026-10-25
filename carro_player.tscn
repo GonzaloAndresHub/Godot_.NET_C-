@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bx18us7cndqfy"]
+
+[ext_resource type="PackedScene" uid="uid://ubd0si0josvv" path="res://assets/models/carro_final.glb" id="1_c5n3j"]
+
+[node name="carro_final" unique_id=582671209 instance=ExtResource("1_c5n3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24594855, 0)

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bnkbxo7q0456f"]
+
+[ext_resource type="Script" uid="uid://bvx7o37hj56bb" path="res://scripts/carrera_ui.gd" id="1_g8k3o"]
+
+[node name="CarreraUI" type="Control" unique_id=1270048243]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_g8k3o")

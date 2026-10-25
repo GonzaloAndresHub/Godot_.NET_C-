@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dc7e08ixlx7kf"]
+
+[ext_resource type="PackedScene" uid="uid://cuu56n5h324no" path="res://carro_controlador.tscn" id="1_1xwnw"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7jlwg"]
+
+[sub_resource type="Sky" id="Sky_11j0o"]
+sky_material = SubResource("ProceduralSkyMaterial_7jlwg")
+
+[sub_resource type="Environment" id="Environment_kibtf"]
+background_mode = 2
+sky = SubResource("Sky_11j0o")
+
+[sub_resource type="Curve3D" id="Curve3D_1xwnw"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.10954666, 0, -16.119192, 0, 0, 0, 0, 0, 0, -0.28971863, 0, -26.654167, 0, 0, 0, 0, 0, 0, -0.40560532, 0, -36.968174, 0, 0, 0, 0, 0, 0, 0.09095001, 0, -49.655064, 0, 0, 0, 0, 0, 0, -0.12373352, 0, -63.100994, 0, 0, 0, 0, 0, 0, -0.3711853, 0, -74.97883, 0, 0, 0, 0, 0, 0, -0.38279724, 0, -90.63026, 0, 0, 0, 0, 0, 0, -0.2290039, 0, -111.75732, 0, 0, 0, 0, 0, 0, -0.2290039, 0, -135.11644, 0, 0, 0, 0, 0, 0, -1.0902405, 0, -168.623, 0, 0, 0, 0, 0, 0, -0.4944458, 0, -210.62192, 0, 0, 0, 0, 0, 0, -1.4832764, 0, -261.0525, 0, 0, 0, 0, 0, 0, 36.824146, 0, -297.4289, 0, 0, 0, 0, 0, 0, 80.74974, 0, -312.40353, 0, 0, 0, 0, 0, 0, 126.67198, 0, -304.41705, 0, 0, 0, 0, 0, 0, 174.5908, 0, -278.461, 0, 0, 0, 0, 0, 0, 185.57225, 0, -244.5185, 0, 0, 0, 0, 0, 0, 184.5739, 0, -212.57259, 0, 0, 0, 0, 0, 0, 154.62468, 0, -180.62668, 0, 0, 0, 0, 0, 0, 123.67705, 0, -152.67401, 0, 0, 0, 0, 0, 0, 108.70244, 0, -127.71626, 0, 0, 0, 0, 0, 0, 81.74809, 0, -60.829525, 0, 0, 0, 0, 0, 0, 78.75316, 0, -20.897139, 0, 0, 0, 0, 0, 0, 79.75145, 0, 9.052127, 0, 0, 0, 0, 0, 0, 81.74809, 0, 36.006496, 0, 0, 0, 0, 0, 0, 81.74809, 0, 64.95747, 0, 0, 0, 0, 0, 0, 81.74809, 0, 89.91523, 0, 0, 0, 0, 0, 0, 99.717636, 0, 110.87972, 0, 0, 0, 0, 0, 0, 121.680466, 0, 139.83069, 0, 0, 0, 0, 0, 0, 143.64323, 0, 173.77321, 0, 0, 0, 0, 0, 0, 158.85686, 0, 210.1248, 0, 0, 0, 0, 0, 0, 154.62462, 0, 245.86836, 0, 0, 0, 0, 0, 0, 126.67198, 0, 277.59738, 0, 0, 0, 0, 0, 0, 89.73454, 0, 294.56866, 0, 0, 0, 0, 0, 0, 42.814014, 0, 302.55515, 0, 0, 0, 0, 0, 0, 3.8799927, 0, 299.5602, 0, 0, 0, 0, 0, 0, -30.062572, 0, 286.5822, 0, 0, 0, 0, 0, 0, -45.037212, 0, 252.94412, 0, 0, 0, 0, 0, 0, -54.021984, 0, 220.69374, 0, 0, 0, 0, 0, 0, -39.047375, 0, 188.74783, 0, 0, 0, 0, 0, 0, -14.089612, 0, 153.807, 0, 0, 0, 0, 0, 0, -2.1099365, 0, 127.85098, 0, 0, 0, 0, 0, 0, -0.11329347, 0, 88.9169, 0, 0, 0, 0, 0, 0, -1.1115844, 0, 51.979435, 0, 0, 0, 0, 0, 0, -1.1115844, 0, 21.031841, 0, 0, 0, 0, 0, 0, -1.3189971, 0, 11.504958, 0, 0, 0, 0, 0, 0, -0.2278946, 0, -5.8163176, 0, 0, 0, 0, 0, 0, -0.2278946, 0, -11.135451, 0, 0, 0, 0, 0, 0, -0.14511293, 0, -12.834178, 0, 0, 0, 0, 0, 0, -0.14511293, 0, -13.803662, 0, 0, 0, 0, 0, 0, -0.08918184, 0, -15.034162, 0, 0, 0, 0, 0, 0, -0.12646955, 0, -16.17144),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 52
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kibtf"]
+albedo_color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="Mundo" type="Node3D" unique_id=1925218699]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1076490621]
+transform = Transform3D(0.99994344, 0.010604023, -0.0009005671, 0.00058866094, 0.029380415, 0.99956816, 0.010625903, -0.9995121, 0.029372508, 0, 18.695621, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=936089031]
+environment = SubResource("Environment_kibtf")
+
+[node name="CarroJugador" parent="." unique_id=320771215 instance=ExtResource("1_1xwnw")]
+
+[node name="Circuito" type="Path3D" parent="." unique_id=1486862628]
+curve = SubResource("Curve3D_1xwnw")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Circuito" unique_id=433198980]
+use_collision = true
+polygon = PackedVector2Array(-18, 0, -18, -0.3, 18, -0.3, 18, 0)
+mode = 2
+path_node = NodePath("..")
+path_interval_type = 0
+path_interval = 1.0
+path_simplify_angle = 0.0
+path_rotation = 2
+path_rotation_accurate = false
+path_local = false
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = false
+material = SubResource("StandardMaterial3D_kibtf")

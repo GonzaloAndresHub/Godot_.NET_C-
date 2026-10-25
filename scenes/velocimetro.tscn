@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://ddbo4qmmw2e0f"]
+
+[ext_resource type="Texture2D" uid="uid://c3f88okibucya" path="res://assets/UI/velocimetro_plateado.png" id="1_8bv5p"]
+[ext_resource type="Shader" uid="uid://6leq7fvxgkmb" path="res://assets/UI/velocimetro.gdshader" id="1_lyngb"]
+[ext_resource type="Script" uid="uid://jpsm5b460ps1" path="res://assets/UI/velocimetro.gd" id="1_xs4yp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lyngb"]
+shader = ExtResource("1_lyngb")
+shader_parameter/progress = 1.0
+shader_parameter/center_uv = Vector2(0.488, 0.585)
+shader_parameter/start_angle_deg = -125.0
+shader_parameter/sweep_deg = 247.0
+shader_parameter/dot_min_radius = 0.463
+shader_parameter/color_low = Color(0, 0.9, 1, 1)
+shader_parameter/color_mid = Color(0.8, 0.1, 1, 1)
+shader_parameter/color_high = Color(1, 0.1, 0.2, 1)
+shader_parameter/glow_intensity = 3.50000011875
+shader_parameter/halo_strength = 1.0000000475
+shader_parameter/glow_radius = 18.0000008075
+shader_parameter/core_whiteness = 0.6
+shader_parameter/head_boost = 1.5
+shader_parameter/pulse_amount = 0.12
+shader_parameter/pulse_speed = 6.0
+shader_parameter/unlit_brightness = 0.50000002375
+
+[node name="Velocimetro" type="Control" unique_id=427475216]
+custom_minimum_size = Vector2(1124, 944)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1124.0
+offset_bottom = 944.0
+script = ExtResource("1_xs4yp")
+
+[node name="Gauge" type="TextureRect" parent="." unique_id=1712791482]
+material = SubResource("ShaderMaterial_lyngb")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_8bv5p")
+expand_mode = 1
+
+[node name="SpeedLabel" type="Label" parent="." unique_id=323866423]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 204.0
+offset_right = 899.0
+offset_bottom = 809.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 220
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="KmhLabel" type="Label" parent="." unique_id=1848987516]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 593.0
+offset_right = 654.0
+offset_bottom = 670.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "Km/h"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RpmLabel" type="Label" parent="." unique_id=8649888]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 215.0
+offset_right = 698.0
+offset_bottom = 325.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 44
+text = "0.0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GearLabel" type="Label" parent="." unique_id=1275888330]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 745.0
+offset_right = 698.0
+offset_bottom = 875.0
+theme_override_font_sizes/font_size = 100
+text = "N
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
